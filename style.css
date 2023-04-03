@@ -39,9 +39,9 @@ header {
 
 #menu {
   display:flex;
-  width: 380px;
+  width: 700px;
   padding-right: 10px;
-  font: 'poppins';
+  font-family: 'poppins';
   font-weight: 300;
   color: #ffffff;
   list-style: none;
