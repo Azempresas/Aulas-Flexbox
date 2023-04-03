@@ -39,17 +39,18 @@ header {
 
 #menu {
   display:flex;
-  width: 700px;
+  width: 600px;
   padding-right: 10px;
   font-family: 'poppins';
   font-weight: 300;
   color: #ffffff;
   list-style: none;
   justify-content: space-between;
+  align-items: center;
 }
 .login { 
   padding: 10px 20px 10px 20px;
-  background-color: #ffffff;
+  background-color: #00FA9A	;
   color: #000000;
   border-radius: 4px
 }
