@@ -57,24 +57,53 @@ header {
 
 .menu-img {
   display: block;
-  width: 40px;
+  width: 36px;
   font-size: 26px;
   color: #ffffff;
+  
 }
+
 
 @media screen and (max-width: 768px) {
   
- #menu {
-  display: none; 
- }
  
- #menu-hamburguer{
-   
-   color: #ffffff;
- }
- 
- #menu-img  {
+ .menu-img  {
    font-size: 36px;
  }
+ 
+ .menu__item {
+    --clip: 0;
+    overflow: hidden;
+  }
+
+  .menu__item--active {
+    --transform: rotate(0);
+    --background: #5e7094;
+  }
+
+  .menu__item--show {
+    background-color: var(--background);
+  }
+ 
+ #menu {
+   display: flex;
+    position: fixed;
+    max-width: 400px;
+    width: 100%;
+    top: 70px;
+    bottom: 0;
+    right: 0;
+    background-color: #000;
+    overflow-y: auto;
+    display: grid;
+    grid-auto-rows: max-content;
+    transform: translateX(100%);
+  }
+  
+  
+  #menu--show {
+    transform: unset;
+    width: 100%;
+  }
   
 }
