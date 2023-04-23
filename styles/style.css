@@ -7,8 +7,6 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
-
-
 top {
   display: flex;
   background-color: #483D8B;
@@ -53,7 +51,6 @@ header {
 .menu {
   display: flex;
   width: 600px;
-  padding-right: 10px;
   font-family: 'poppins';
   font-weight: 400;
   color: #ffffff;
@@ -62,27 +59,6 @@ header {
   align-items: center;
 }
 
-.menu ul {
-  display: flex;
-  font-family: 'poppins';
-  font-weight: 400;
-  color: #ffffff;
-  list-style: none;
-  justify-content: space-between;
-  align-items: center;
-}
-
-/* #menu {
-  display:flex;
-  width: 600px;
-  padding-right: 10px;
-  font-family: 'poppins';
-  font-weight: 400;
-  color: #ffffff;
-  list-style: none;
-  justify-content: space-between;
-  align-items: center;
-}
 .login { 
   padding: 10px 20px 10px 20px;
   background-color: #00FA9A	;
@@ -90,26 +66,23 @@ header {
   border-radius: 4px;
   float: right;
 }
-
 .menu-img {
   display: block;
-  width: 36px;
-  font-size: 26px;
+  width: 40px;
+  font-size: 40px;
   color: #ffffff;
   
 }
 
-
 @media screen and (max-width: 768px) {
-  
- 
+   
  .menu-img  {
-   font-size: 36px;
+   font-size: 40px;
  }
- .menu-item {
+ .nav {
    display: none;
  }
- 
+
  .menu-hamburguer {
    display: block;
    
@@ -119,4 +92,4 @@ header {
    margin-left: 30px;
    float: right;
  }
-}*/
+}
