@@ -7,15 +7,21 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
+
+
 top {
-  
   display: flex;
   background-color: #483D8B;
   height: 30px;
-  color: white;
-  font-family: 'poppins';
-  padding-left: 10px;
-  padding-right: 10px;
+  color: white;  
+}
+
+.container-top {
+  display: flex;
+  background-color: #483D8B;
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 10px 0 10px;
   justify-content: space-between;
   align-items: center;
 }
@@ -31,13 +37,42 @@ header {
   display: flex;
   height: 100px;
   background-color: #191970;
-  padding: 10px;
+  
+}
+
+.container-header {
+
+  display: flex;
+  width: 1440px;
+  margin: 0 auto;
+  padding: 0 10px 0 10px;
   justify-content: space-between;
   align-items: center;
 }
 
+.menu {
+  display: flex;
+  width: 600px;
+  padding-right: 10px;
+  font-family: 'poppins';
+  font-weight: 400;
+  color: #ffffff;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
 
-#menu {
+.menu ul {
+  display: flex;
+  font-family: 'poppins';
+  font-weight: 400;
+  color: #ffffff;
+  list-style: none;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* #menu {
   display:flex;
   width: 600px;
   padding-right: 10px;
@@ -62,7 +97,7 @@ header {
   font-size: 26px;
   color: #ffffff;
   
-}
+} */
 
 
 @media screen and (max-width: 768px) {
