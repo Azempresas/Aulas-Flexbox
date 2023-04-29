@@ -74,6 +74,19 @@ header {
   
 }
 
+slider {
+  background-color: #f8f9f9;
+}
+
+.container-slider{
+  display: flex;
+  height: 550px;
+  align-items: center;
+  justify-content: space-between;
+  
+  
+}
+
 @media screen and (max-width: 768px) {
    
  .menu-img  {
