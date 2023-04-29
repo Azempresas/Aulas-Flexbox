@@ -4,6 +4,7 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style: none;
+  
 }
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
 
@@ -74,13 +75,17 @@ header {
   
 }
 
-slider {
-  background-color: #f8f9f9;
+.slider {
+  display: flex;
+  background-color: #f3f3f3;
+  height: 600px;
 }
 
 .container-slider{
   display: flex;
   height: 550px;
+  width: 1440px;
+  margin: 0 auto;
   align-items: center;
   justify-content: space-between;
   
