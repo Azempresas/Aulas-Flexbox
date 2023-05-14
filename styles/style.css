@@ -92,6 +92,14 @@ header {
   
 }
 
+/*  animacoes */
+
+.saiba {
+  width: 500px;
+  background: red;
+  
+}
+
 @media screen and (max-width: 768px) {
    
  .menu-img  {
