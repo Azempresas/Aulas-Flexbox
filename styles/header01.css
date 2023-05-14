@@ -86,6 +86,7 @@ header {
         background-color: transparent;
         border: none;
         cursor: pointer;
+        color: #fff;
     }
     .mobile-menu ul {
         display: flex;
