@@ -1,0 +1,128 @@
+
+  /* animação do fundo  */
+  body{
+    animation: gradiente 10s ease alternate infinite;
+    margin: 30px;
+    background: linear-gradient(-90deg, #ee7752, #e73c7e, #23a6d5, #23d5ab) no-repeat;
+    height: 100vh;
+    background-size: 400% 400%;
+    font-family: sans-serif;
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    color: white;
+  }
+
+  @keyframes gradiente {
+    from  {
+      background-position: 0 50%;
+    }
+    to {
+      background-position: 100% 50%;
+    }
+  }
+
+   /* fim  animação do fundo  */
+
+/* animação Texto */
+
+.efeitotexto {
+    display: flex;
+    width: 150px;
+    justify-content: center ;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.efeitotexto::after {
+
+    animation: passando 0.5s ease forwards;  
+    background-color: #ffffff;
+    bottom: 0;
+    content: '';
+    display: block;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+
+h1 {
+    animation: show 1ms 0.5s forwards;
+    opacity: 0;
+    font-size: 20px;
+}
+
+  @keyframes passando {
+    from {
+        transform: translateX(-101%);
+    }
+    to {
+        
+        transform: translateX(101%);
+    }
+    
+  }
+
+  @keyframes show {
+    to {
+        opacity: 1;
+    }
+  }  
+
+
+
+   /* Animação da bolinha  */
+
+  .box {
+    background-color: darkblue;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    animation-name: linear;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    /* animation-delay: 1s; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+    /* transition-property: background-color, border-radius;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out; */
+  }
+  
+  .box:hover {
+    background-color: tomato;
+    border-radius: 50%;
+    animation-play-state: paused;
+  }
+
+    @keyframes linear {
+
+    100% {
+      transform: translateX(calc(100vw - 200px));
+    }      
+    }
+    
+  /* Animação do SVG */
+
+  svg {
+    width: 100px;
+  }
+
+  .seta {
+    animation: pulando 1s infinite ease-in-out alternate;
+    display: grid;
+    place-items: center;
+    height: 50vh;
+  }
+  
+  @keyframes pulando {
+    to{
+        
+        transform: translateY(30px);
+    }
+  }
+ 
+    /* fim Animação do SVG */
