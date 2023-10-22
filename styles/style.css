@@ -1,12 +1,12 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  box-sizing: border-box; s
   text-decoration: none;
   list-style: none;
   
 }
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300   ;400;500;600;700;800&display=swap');
 
 top {
   display: flex;
@@ -22,7 +22,7 @@ top {
   margin: 0 auto;
   padding: 0 10px 0 10px;
   justify-content: space-between;
-  align-items: center;
+  align-items: center;"
 }
 
 .icones {
@@ -281,4 +281,30 @@ transform: translatey(-5px);
 }
 
 
+}
+
+
+.marquee {
+--gap: 1rem;{3}
+display: flex;
+overflow: hidden;
+user-select: none;
+gap: var(--gap);
+}
+
+.marquee__content {
+flex-shrink: 0;
+display: flex;
+justify-content: space-around;
+min-width: 100%;
+gap: var(--gap);
+}
+
+@keyframes scroll {
+from {
+transform: translateX(0);
+}
+to {
+transform: translateX(calc(-100% - var(--gap)));
+}
 }
