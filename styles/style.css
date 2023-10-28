@@ -281,24 +281,6 @@ transform: translatey(-5px);
 }
 
 
-}
-
-
-.marquee {
---gap: 1rem;{3}
-display: flex;
-overflow: hidden;
-user-select: none;
-gap: var(--gap);
-}
-
-.marquee__content {
-flex-shrink: 0;
-display: flex;
-justify-content: space-around;
-min-width: 100%;
-gap: var(--gap);
-}
 
 @keyframes scroll {
 from {
