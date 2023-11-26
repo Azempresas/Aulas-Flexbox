@@ -70,11 +70,20 @@ header {
 }
 
 .login { 
-  padding: 10px 20px 10px 20px;
-  background-color: hsl(208, 93%, 61%)	;
+  padding: 8px 30px 8px 30px;
+  
   color: #fff;
-  border-radius: 4px;
+  border-radius: 5px;
+  border: 2px solid hsl(208, 93%, 61%);
   float: right;
+}
+.login:hover {
+  background-color: hsl(208, 93%, 61%);
+  color: #fff;
+  border-radius: 5px;
+  border: 2px solid hsl(208, 93%, 61%);
+  transition: 0.5s;
+  
 }
 
 .menu-hamburguer {
