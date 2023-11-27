@@ -1,5 +1,4 @@
-  @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,200;1,500;1,700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300   ;400;500;600;700;800&display=swap');
 
 *{
   margin: 0;
@@ -56,7 +55,7 @@ header {
   align-items: center;
 }
 
- .nav-menu {
+.menu {
   display: flex;
   width: 600px;
   font-family: 'poppins';
@@ -64,11 +63,12 @@ header {
   color: #ffffff;
   justify-content: space-between;
   align-items: center;
-} 
-.nav-menu a {
+}
+
+.menu a {
   color: #ffffff;
 }
-/* 
+
 .login { 
   padding: 8px 30px 8px 30px;
   
@@ -89,11 +89,6 @@ header {
 .menu-hamburguer {
   display: none;
   
-} */
-
-.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
-  z-index: 999;
-  background-color: #ffffff !important;
 }
 .menu-img {
   display: block;
@@ -224,80 +219,16 @@ transform: translatey(-5px);
   margin-top: 10px;
 }
 
-.panel {
-  position: fixed;
-  z-index: 998;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  width: 300px;
-  background-color: #000000;
-  transition: transform 0.3s ease;
-  transform: translate(-100%, 0);
-}
-
-.panel.is-active {
-  transform: translate(0, 0);
-}
-
-.panel-btn {
-  
-  z-index: 999;
-  top: 7vh;
-  right: 2vh;
-  width: 4rem;
-  height: 4rem;
-  cursor: pointer;
-  border-radius: 50%;
-  padding: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  
-}
-
-.menu {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: left;
-  text-align: left;
-  padding-top: 5rem;
-}
-
-.menu a {
-  padding: 1.5rem;
-  width: 100%;
-  display: block;
-  font-size: 1.1rem;
-  text-decoration: none;
-  color: #fff;
-  font-family: 'poppins';
-  transition: all 0.3s ease;
-  border-bottom: 1px solid rgb(173,216,230, 0.2) ;
-
-}
-
-.menu a:hover {
-  color: var(--second-color);
-  background-color: hsl(208, 93%, 61%);;
-}
-
-
-
-
 
 @media screen and (max-width: 768px) {
    
  .menu-img  {
    font-size: 40px;
  }
-  .nav-menu {
+ .menu {
    display: none;
  }
-/*
+
  .menu-hamburguer {
    display: block;
    
@@ -306,7 +237,7 @@ transform: translatey(-5px);
  .login {
    margin-left: 30px;
    float: right;
- } */
+ }
 
  .container-slider{ 
  display: flex;
@@ -314,8 +245,6 @@ transform: translatey(-5px);
  justify-content: space-evenly;
  
  }
-
- 
 
  
 .container-slider h1 {
